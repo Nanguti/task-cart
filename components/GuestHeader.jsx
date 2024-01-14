@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const GuestHeader = () => {
   return (
@@ -9,7 +9,7 @@ const GuestHeader = () => {
             {/*Logo section start*/}
             <div className="logo-header">
               <div className="logo-header-inner logo-header-one">
-                <a href="index-2.html">
+                <Link href="/">
                   <img
                     src="images/logo-light.png"
                     alt=""
@@ -20,7 +20,7 @@ const GuestHeader = () => {
                     alt=""
                     className="site-logo-sticky"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             {/*Logo section End*/}
@@ -38,125 +38,33 @@ const GuestHeader = () => {
               <span className="icon-bar icon-bar-three" />
             </button>
             {/* MAIN Vav */}
-            <div className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-start">
+            <div className="nav-animation header-nav navbar-collapse d-flex justify-content-start">
               <ul className=" nav navbar-nav">
-                <li className="has-child current-menu-item">
-                  <a href="javascript:;">Home</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="index-2.html">Home 1</a>
-                    </li>
-                    <li>
-                      <a href="index-3.html">Home 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-child">
-                  <a href="javascript:;">Pages</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="about-us.html">About us</a>
-                    </li>
-                    <li>
-                      <a href="javascript:;">Categories</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <a href="all-categories.html">All Categories</a>
-                        </li>
-                        <li>
-                          <a href="categories-detail.html">Categories Detail</a>
-                        </li>
-                        <li>
-                          <a href="categories-detail-2.html">
-                            Categories Detail 2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="javascript:;">Search</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <a href="search-list.html">Search List</a>
-                        </li>
-                        <li>
-                          <a href="new-search-list-2.html">Search List 2</a>
-                        </li>
-                        <li>
-                          <a href="search-list-map.html">Search List Map</a>
-                        </li>
-                        <li>
-                          <a href="search-list-map2.html">Search List Map 2</a>
-                        </li>
-                        <li>
-                          <a href="search-grid.html">Search-grid</a>
-                        </li>
-                        <li>
-                          <a href="search-grids-map.html">Search-grid-map</a>
-                        </li>
-                        <li>
-                          <a href="search-grid-map2.html">Search-grid-map2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="error-404.html">Error 404</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-child">
-                  <a href="javascript:;">Profile</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="profile-full.html">Profile</a>
-                    </li>
-                    <li>
-                      <a href="profile-sidebar.html">Profile Sidebar</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-child">
-                  <a href="javascript:;">Jobs</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="job-listing.html">Job listing</a>
-                    </li>
-                    <li>
-                      <a href="job-grid.html">Job grid</a>
-                    </li>
-                    <li>
-                      <a href="job-detail.html">Job detail</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-child">
-                  <a href="javascript:;">Blog</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="blog-grid.html">Blog Grid</a>
-                    </li>
-                    <li>
-                      <a href="blog-grid-2.html">Blog Grid 2</a>
-                    </li>
-                    <li>
-                      <a href="blog-list.html">Blog list</a>
-                    </li>
-                    <li>
-                      <a href="blog-list-2.html">Blog list 2</a>
-                    </li>
-                    <li>
-                      <a href="blog-list-3.html">Blog list 3</a>
-                    </li>
-                    <li>
-                      <a href="blog-list-4.html">Blog list 4</a>
-                    </li>
-                    <li>
-                      <a href="blog-detail.html">Blog detail</a>
-                    </li>
-                  </ul>
+                <li>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <a href="contact-us.html">Contact</a>
+                  <Link href="/about">About US</Link>
+                </li>
+
+                <li>
+                  <Link href="/how-it-works">How It Works</Link>
+                </li>
+
+                <li>
+                  <Link href="/categories">Categories</Link>
+                </li>
+                <li>
+                  <Link href="/services">Services</Link>
+                </li>
+                <li>
+                  <Link href="/jobs">Jobs</Link>
+                </li>
+                <li>
+                  <Link href="/faqs">FAQs</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
